@@ -1,0 +1,411 @@
+@font-face {
+    font-family: Bubble;
+
+    src: url(../fonts/RubikBubbles-Regular.ttf); 
+
+}
+:root {
+    --site-color-01:#c13584;
+    --site-color-01-hover:#9e2f6e;
+}
+body {
+    background-color: #1d1d1d;
+
+}
+
+html {
+   font-size: 62.5%; 
+}
+
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../images/facebook-color.png) url(../images/instagram-color.png)
+
+}
+
+/* main wrapper for the website */
+.wrapper-main {
+    /* sets the width of wrapper-main noted in the alignpage.html document */
+    width: 1100px;
+    /* Margin 0 auto - centeres a container like flexbox */
+    margin: 0 auto;
+
+}
+
+h1 {
+    font-size: 2.6rem;
+    line-height: 1.5;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+h2 {
+    font-size: 2.8rem;
+    line-height: 1.5;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+
+h3 {
+    font-size: 2.6rem;
+    line-height: 1.5;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.75;
+    color: #fff;
+    font-family: Roboto;
+
+}
+
+a {
+
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    font-family: Roboto;
+}
+
+
+.header-main {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+
+.header-main-logo {
+    width: fit-content;
+    height: 100%;
+
+    padding-left: 60px;
+    display: flex;
+
+}
+
+.header-main-logo img {
+    height: 40px;
+
+    align-self: center;
+}
+
+
+.header-main-nav {
+    width: fit-content;
+    height: 100%;
+
+}
+.header-main-nav ul {
+    list-style: none;
+    margin-left: 30px;
+
+
+}
+
+.header-main-nav li {
+    display: inline;
+    float: left; 
+}
+.header-main-nav li a {
+    padding: 0 10px;
+    font-family: Bubble, cursive;
+
+    line-height: 60px;
+
+    color: #000;
+    display: block;
+    height: 100%;
+
+}
+
+.header-main-nav li a:hover {
+    color: #c13584;
+
+}
+
+.header-main-sm {
+    width: fit-content;
+    height: 100%;
+
+    padding-right: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    column-gap: 10px;
+}
+.header-main-sm-fb {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/facebook.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-main-sm-fb:hover {
+    background-image: url(../images/facebook-color.png);
+
+}
+.header-main-sm-in {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.header-main-sm-in:hover {
+    background-image: url(../images/instagram-color.png);
+
+}
+
+/* FOOTER */
+.footer-main {
+    width: 100%;
+    padding: 60px 0 100px;
+    background-color: #141414;
+
+}
+
+.footer-main-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.footer-testimony {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.footer-testimony img {
+
+    width: 50%;
+    border-radius: 100px;
+
+}
+
+.footer-testimony p {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 20px  20px 0;
+}
+
+
+.footer-getintouch {
+ padding: 10px 20px;
+
+ margin: 40px 0 60px;
+ border: 2px solid #fff;
+ font-weight: 600;
+
+ transition: all ease-in-out 200ms;
+
+}
+
+.footer-getintouch:hover {
+    border: 2px solid var(--site-color-01);
+}
+
+.footer-sitemap {
+    flex-basis: 100%;
+    display: flex;
+}
+
+.footer-sitemap a {
+    line-height: 30px;
+}
+
+.footer-sitemap a:hover {
+    opacity: 0.8;
+}
+
+.footer-sitemap ul:nth-child(1) {
+    border-left: 4px solid var(--site-color-01);
+    padding-left: 20px;
+}
+
+
+.footer-sitemap ul:nth-child(1), 
+.footer-sitemap ul:nth-child(2) {
+    flex-basis: 180px;
+}
+
+.footer-sitemap ul:nth-child(3) {
+    flex-basis: 340px;
+}
+
+.footer-sitemap p {
+    text-transform: uppercase;
+}
+
+.footer-sitemap ul:nth-child(4) {
+    flex-grow: 1;
+}
+
+.footer-sitemap ul:nth-child(4) p {
+    text-align: right;
+}
+
+.burger-menu, .burger-menu-btn {
+    display: none;
+}
+
+
+/* Media Query for changing the size specs for mobile
+Not doing all versions
+Just doing mobile version*/
+
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+
+    .burger-menu-btn {
+        /* if you have something set to display none, adding display block will
+        make it appear again */
+        display: block;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/burger-menu.png), url(../images/close.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center, center left 50px;
+    }
+    .burger-menu {
+        display: none;
+        /* fixes the position in the browser*/
+        position: fixed;
+        width: 100%;
+        /* makes it cover the screen*/
+        height: 100vh;
+        /* between header and content of page in viewing order*/
+        z-index: 900;
+        background-color: #111;
+
+    }
+    .burger-menu ul{
+        width: 100%;
+        height: calc(100vh - 60px);
+        display: flex;
+        /* wrap makes items go below each other */
+        flex-wrap: wrap;
+        align-content: flex-start;
+        
+    }
+
+    .burger-menu li{
+    flex-basis: 100%;
+    /* adds a black line border to the top of the burger menu unorded list items */
+    border-top: 2px solid #000;     
+    }
+
+    .burger-menu li:last-child{
+        border-bottom: 2px solid #000;     
+        }
+
+    .burger-menu li a{
+        /* block for setting a width and height */
+        display: block;
+        height: 100%;
+        font-size: 3rem;
+        padding: 30px 0;
+        flex-basis: 100%;
+        text-align: center;
+        }
+    .wrapper-main {
+        /* sets the width of wrapper-main noted in the alignpage.html document 
+        updated within the wrapper to 100 percent so that it fits to the space of the screen
+        specified above*/
+        /* implementing responsive design using calc */
+        width: calc(100% - 40px);  
+       /* adding spacing */
+    }
+
+    
+    /* keep things you want to change and delete the ones that aren't needed
+    as they are already set in the main css above
+    Moves logo over 20px when on mobile */
+    .header-main-logo {
+        padding-left: 20px;
+
+    }
+    /* setting it to not display when in mobile 
+    removing the navigation bar*/
+    .header-main-nav {
+        display: none;
+    
+    }
+    /* set to 20px from right when on mobile */
+    .header-main-sm {
+
+        padding-right: 20px;
+    
+    }
+    /* display none removes the content in footer testimony from being displayed*/
+    .footer-testimony {
+        display: none;
+    }
+    
+    .footer-getintouch {
+     margin: 0px 0 60px;
+    }
+    /* flex-wrap: wrap; positions the content below each other */
+    .footer-sitemap {
+        flex-wrap: wrap;
+    }
+    
+    .footer-sitemap ul:nth-child(1) {
+        border-left: none;
+        padding-left: 0;
+    }
+    
+    
+    .footer-sitemap ul:nth-child(1), 
+    .footer-sitemap ul:nth-child(2),
+    .footer-sitemap ul:nth-child(3) {
+        flex-basis: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    .footer-sitemap p {
+        text-transform: uppercase;padding: 0 20px;
+    }
+    .footer-sitemap ul:nth-child(4) {
+        flex-grow: 1;
+    }
+    
+    .footer-sitemap ul:nth-child(4) p {
+        text-align: center;
+    }
+}
