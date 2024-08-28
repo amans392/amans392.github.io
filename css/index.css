@@ -94,11 +94,11 @@ main .main-quotes {
  font-size: 2.2rem;
 }
 
-.index-category a h3 {
-    font-size: 1.5rem;
+/* .index-category a h3 {
+    
 
 
-}
+} */
 .index-category-box {
 
     width: 20rem;
@@ -133,7 +133,6 @@ main .main-quotes {
     }
 
 .dark-overlay {
-
     position: absolute;
     top: 0;
     right: 0;
@@ -144,21 +143,15 @@ main .main-quotes {
     transition: all ease-in-out 200ms;
 }
 
-.dark-overlay h3 {
-    
-}
-
 .index-category-box:hover .dark-overlay {
     opacity: 0;
 }
 
 .index-category-box h3 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     line-height: 1.5;
-
     text-align: center;
     text-shadow: -2px 2px 4px #000;
-    
     z-index: 100;
 }
 
@@ -179,7 +172,6 @@ main .main-quotes {
 }
 .index-about-img img {
     width: 300px;
-
     border-radius: 300px;
 }
 
@@ -250,6 +242,35 @@ main .main-quotes {
         align-items: flex-end;
 
     }
+
+    .index-category-box h3 {
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: center;
+        text-shadow: -2px 2px 4px #000;
+        z-index: 100;     
+        text-transform:none;
+        font-display: none;
+    }
+
+    /* .dark-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #1A253A;
+        opacity: 0.5;
+        transition: all ease-in-out 200ms;
+    }
+    
+    .index-category-box:hover .dark-overlay {
+        opacity: 0;
+    }
+
+    .index-category-box:hover .dark-overlay {
+        opacity: 0;
+    } */
     
     main .main-intro {
         /* adds 8vh spacing from the bottom */
@@ -289,7 +310,8 @@ main .main-quotes {
     }
     
     .index-category p {
-     padding-bottom: 20px; 
+     padding-bottom: 20px;
+     font-weight: bold;
     }
     .index-category-box {
     
