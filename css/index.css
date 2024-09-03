@@ -187,13 +187,12 @@ main .main-quotes {
 
         font-size: 1.8rem;
         display: block;
-        background-color: var(--site-color-01);
-        padding: 0px 20px;
-        width: fit-content;
+        width: 200px;
+        margin-top: 20px;
 }
 
 .index-about-text a:hover {
-    background-color: var(--site-color-01-hover);
+color: var(--site-color-01-hover);
 }
 
 
@@ -250,7 +249,7 @@ main .main-quotes {
         text-shadow: -2px 2px 4px #000;
         z-index: 100;     
         text-transform:none;
-        font-display: none;
+        font-display: ;
     }
 
     /* .dark-overlay {
