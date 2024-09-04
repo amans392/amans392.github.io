@@ -249,7 +249,6 @@ color: var(--site-color-01-hover);
         text-shadow: -2px 2px 4px #000;
         z-index: 100;     
         text-transform:none;
-        font-display: ;
     }
 
     /* .dark-overlay {

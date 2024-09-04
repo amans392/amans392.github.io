@@ -23,7 +23,7 @@ body:after {
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(../images/facebook-color.png) url(../images/instagram-color.png)
+    content: url(../images/github-color.png) url(../images/LinkedIn-color.png)
 
 }
 
@@ -160,7 +160,32 @@ a {
 
     column-gap: 10px;
 }
-.header-main-sm-fb {
+
+.header-main-sm-in {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/LinkedIn-bw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-main-sm-in:hover {
+    background-image: url(../images/LinkedIn-color.png);
+
+}
+.header-main-sm-gh {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/github-faded.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.header-main-sm-gh:hover {
+    background-image: url(../images/github-color.png);
+
+}
+
+/* .header-main-sm-fb {
     width: 20px;
     height: 20px;
     background-image: url(../images/facebook.png);
@@ -182,7 +207,7 @@ a {
 .header-main-sm-in:hover {
     background-image: url(../images/instagram-color.png);
 
-}
+} */
 
 /* FOOTER */
 .footer-main {
@@ -289,6 +314,7 @@ Just doing mobile version*/
 /* Mobile Media Query */
 @media only screen and (max-width: 600px) {
 
+
     .burger-menu-btn {
         /* if you have something set to display none, adding display block will
         make it appear again */
@@ -363,8 +389,10 @@ Just doing mobile version*/
     removing the navigation bar*/
     .header-main-nav {
         display: none;
-    
+        
     }
+
+
     /* set to 20px from right when on mobile */
     .header-main-sm {
 
