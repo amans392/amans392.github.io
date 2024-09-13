@@ -1,21 +1,15 @@
 main {
     width: 100%;
-
     height: calc(100vh - 60px);
     background-color: #1A253A;
     margin-top: 60px;
     background-size: cover;
     background-repeat: repeat;
-
     background-position: bottom left calc(50% + 80px), center;
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     z-index: 100;
-
     column-gap: 220px;
 
 }
