@@ -1,17 +1,19 @@
 main {
     width: 100%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 50px);
     background-color: #1A253A;
     margin-top: 60px;
     background-size: cover;
     background-repeat: repeat;
     background-position: bottom left calc(50% + 80px), center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 100;
     column-gap: 220px;
-
+    background-image: url(/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+    background-size:160vh ;
 }
 
 
@@ -19,6 +21,7 @@ main .main-intro h1 {
     font-size: 9.6rem;
     line-height: 1.1;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 main p {
@@ -267,6 +270,7 @@ color: var(--site-color-01-hover);
     main .main-intro {
         /* adds 8vh spacing from the bottom */
         padding-bottom: 8vh;
+        
     }
     
     main .main-intro h1 {
