@@ -1,0 +1,509 @@
+/* All  HTML Element styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  color: #ededed;
+  background: #121d1e;
+}
+
+/* Header Section Styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #051129;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+.logo {
+  position: relative;
+  font-size: 25px;
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+/* Navigation Bar styling */
+.navbar a {
+  display: inline-block;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--1));
+}
+.navbar a:hover {
+  color: cyan;
+}
+
+/* Home Section Styling */
+.home {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh;
+  background: url(/images/PortfolioWallpaper.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 70px, 10% 0;
+}
+.home-content {
+  max-width: 600px;
+}
+
+.home-content a {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 30px;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.home-content h3 span {
+  color: cyan;
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.home-content p {
+  font-size: 20px;
+  margin-top: 20px;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.home-scl a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid cyan;
+  border-radius: 50%;
+  font-size: 20px;
+  color: cyan;
+  transition: 0.5s;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(0.2s * var(--1));
+}
+
+.home-scl a:hover {
+  background: cyan;
+  color: darkolivegreen;
+  box-shadow: 0 0 20px cyan;
+}
+
+/* Button Styling */
+.btn-box {
+  display: inline-block;
+  padding: 12px 30px;
+  background: cyan;
+  border-radius: 40px;
+  font-size: 16px;
+  color: black;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2.5s;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+}
+
+.btn-box:hover {
+  box-shadow: 0 0 5px cyan, 
+  0 0 25px cyan, 
+  0 0 50px cyan, 0 0 100px cyan,
+  0 0 200px cyan;
+}
+
+/* About Section Styling */
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: auto; */
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about img {
+    border-radius: 50%;
+    border: 1px solid cyan;
+    box-shadow: 0 0 30px cyan;
+    max-width: 300px;
+    height: auto;
+    width: 100%;
+}
+
+.about-text h2 {
+    font-size: 60px;
+}
+
+.about-text h2 span {
+    color: cyan;
+}
+
+.about-text h4 {
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 60px;
+}
+
+
+
+/* Services Section Styling */
+#services {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    
+}
+
+.sub-title span {
+color: cyan;
+}
+
+.container {
+  padding: 90px;
+}
+
+.services-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    .service {
+      width: 300px;
+      height: 500px;
+    }
+}
+
+.services-list div.service {
+    background: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b6f7;
+
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.read {
+    display: inline-block;
+    padding: 12px 28px;
+    background: cyan;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2.5s;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan;
+
+}
+
+.read:hover {
+    box-shadow: 0 0 5px cyan, 
+    0 0 25px cyan, 
+    0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
+}
+
+.services-list div:hover {
+    transform: translateY(-10px)
+}
+
+/* Skills Section Styling
+
+/combine with services section to add skills and remove skills section*/
+
+section {
+  padding: 40px;
+}
+
+.heading1 {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  margin-bottom: 50px;
+}
+
+.skill-bars {
+  text-align: center;
+}
+
+.bar {
+  font-size: 23px;
+}
+
+.technical-bars .bar {
+  margin-top: 40px 0;
+
+}
+
+.technical-bars .bar:first-child {
+  margin-top: 0;
+}
+
+.technical-bars .bar:last-child {
+  margin-bottom: 0;
+}
+
+/* Portfolio Section */
+.main-text {
+  padding: 130px;
+  margin-top: 200px;
+}
+
+.main-text h2{
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+}
+
+.main-text h2 span {
+  color: cyan;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-flex-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project-container {
+  border: 1px solid #fff;
+
+}
+
+.project-container:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.5;
+}
+
+.thumbnail {
+  height: 300px;
+  width: 320px;
+}
+
+  .layer h5 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .layer p {
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .layer i {
+    color: #ff004f;
+    margin-top: 20px;
+    font-size: 20px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .row:hover img {
+    transform: scale(1.1);
+  }
+
+  .row:hover .layer {
+    height: 100%;
+  }
+
+
+/* Animations for sliding effect on elements */
+
+@keyframes animate-bar {
+  100% {
+    stroke-dashoffset: -1;
+  }
+}
+.path {
+  stroke-width: 10;
+  stroke: cyan;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+
+
+@keyframes showText{
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* Boostrap Media Query Details
+Small devices (tablets, 768px and up)
+
+Medium devices (desktops, 992px and up)
+
+Large devices (large desktops, 1200px and up)
+*/
+
+/* For views between 992 and 1200px*/
+@media (max-width: 1260px) {
+  .project-flex-wrapper {
+    flex-direction: column;
+    .project-container {
+      margin-top: 30px;
+    }
+
+  }
+
+  .services-list {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}

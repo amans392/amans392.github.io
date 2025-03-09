@@ -1,0 +1,196 @@
+<!--
+    Making your website responsive so that it
+    can fit into mobile devices like tablets, smartphones, etc)
+    Scales and resizes according to device
+    Always design for mobile first, then browser
+    using this website for validation: https://validator.w3.org/nu/#textarea
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Mans Profile</title>
+    <!--info about link to font using a cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,900&family=Rubik+Bubbles&display=swap"
+        rel="stylesheet">
+    <!--link to style sheets-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!--Burger Menu Start-->
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <!-- <li><a href="./documents/Alex Mans Web Dev Resume.pdf" 
+                download="Alex Web Development Resume">Web Development Resume</a></li>
+            <li><a href="./documents/Alex Mans IT Specialist Resume.pdf" 
+                download="Alex IT Specialist Resume">IT Specialist Resume</a></li> -->
+        </ul>
+    </nav>
+    <!-- burger menu stop-->
+
+    <!--The header (top) of website-->
+    <header class="header-main">
+        <div class="header-main-logo">
+            <img src="images/logo.png" alt="imagon logo">
+            <nav class="header-main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <!-- <li><a href="./documents/Alex Mans Web Dev Resume.pdf"
+                        download="Alex Web App Development Resume">Web App Development Resume</a></li>
+                    <li><a href="./documents/Alex Mans IT Specialist Resume.pdf"
+                        download="Alex IT Specialist Resume">IT Specialist Resume</a></li> -->
+                </ul>
+            </nav>
+        </div>
+
+        <!-- ADD PICTURES AND STYLING FOR LINKEDIN AND GITHUB-->
+        <div class="header-main-sm">
+            <a href="https://github.com/amans392" target="_blank">
+                <div class="header-main-sm-gh"></div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/alexjmans/" target="_blank">
+                <div class="header-main-sm-in"></div>
+            </a>
+
+            <!--      
+            <a href="https://facebook.com"><div class="header-main-sm-fb"></div>
+            </a>
+            <a href="https://instagram.com"><div class="header-main-sm-in"></div>
+            </a>
+        -->
+            <div class="burger-menu-btn"></div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="main-intro">
+            <h1> Welcome to my website</h1>
+            <!--<a href="#">MY WORK</a>-->
+        </div>
+        <section class="index-about">
+            <div class="about-img-container">
+                <img src="images/thumbnail_A. Man.jpg" alt="Alex Mans Portrait">
+            </div>
+            <div class="about">
+                <h2>About Me</h2>
+                <p class="subsection-title">Alex Mans, Web Application Developer and IT Professional</p>
+                
+                <p>An experienced IT professional building web applications with the React framework</p>
+                <div class="divider"></div>
+                <div class="resume-container">
+                    <p class="subsection-title">Resume</p>
+                    <div class="resume-links">
+                        <ul class="resume-list">
+                            <li>
+                                <a 
+                                  href="./documents/Alex Mans Web Dev Resume.pdf" 
+                                  download="Alex Web App Development Resume">
+                                  Web Application Developer
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./documents/Alex Mans IT Specialist Resume.pdf"
+                                   download="Alex IT Specialist Resume">
+                                  Information Technology Professional</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="index-about-skill">
+                <!-- <p>Windows</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill win"></div>
+                </div>
+                <p>Mac OS</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill mac"></div>
+                </div>
+                <p>Linux</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill lnx"></div>
+                </div> -->
+                <!-- <p>Javascript</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill jscript"></div>
+                </div>
+                <p>React</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill jv"></div>
+                </div>
+                <p>HTML & CSS</p>
+                <div class="index-about-skill-bar">
+                    <div class="index-about-skill-bar-fill htmlcss"></div> -->
+
+            </div>
+            </div>
+        </section>
+        <!-- <div class="main-quotes">
+            <p> Coding like poetry <br> should be short and concise. <br> ― Santosh Kalwar </p>
+        </div> -->
+
+        <section class="index-projects">
+            <h2>Projects</h2>
+            <div class="project-flex-wrapper">
+                <div class="project-container">
+                        <a href="#" class="index-category-box">
+                            <p class="project-title">Portfolio Website</p>
+                            <!-- Project preview image goes here
+                             UPDATE TO Completed website picture -->
+                             <img src="./images/Firebase to-do app.png"> </img>
+                        </a>
+                        <p>HTML/CSS | JS</p>
+                </div>
+               
+                <div class="project-container">
+                        <a href="https://mtgcardsearch-app.web.app/" target="_blank" class="index-category-box">
+                            <p class="project-title">Magic the Gathering Card Search App</p>
+                            <!-- Project preview image goes here -->
+                            <img src="./images/mtg card search app.png"></img>
+                        </a>
+                        <p>HTML/CSS | React</p>
+                </div>
+                
+                <div class="project-container">
+                        <a href="https://to-do-app-29d50.web.app/" target="_blank" class="index-category-box">
+                            <p class="project-title">Firebase To-Do List App</p>
+                            <!-- Project preview image goes here -->
+                             <img class="project-img" src="./images/portfolio website.jpg"></img>
+                            </a>
+                            <p>React| Firebase</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-main">
+        <div class="footer-sitemap">
+            <!--unordered list-->
+            <ul>
+                <!-- <li><a href="#">HOME</a></li> -->
+                <!-- <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">ABOUT ME</a></li> -->
+                <!-- <li><a href="#">CONTACT</a></li> -->
+            </ul>
+            <ul>
+                <!-- <li><a href="#">WEB DEVELOPMENT</a></li> -->
+
+            </ul>
+        </div>
+        </div>
+    </footer>
+    <!--javascript section-->
+    <script src="js/main.js"></script>
+</body>
+</html>

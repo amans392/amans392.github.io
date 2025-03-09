@@ -1,233 +1,233 @@
-<!--
-    Making your website responsive so that it
-    can fit into mobile devices like tablets, smartphones, etc)
-    Scales and resizes according to device
-    Always design for mobile first, then browser
-    using this website for validation: https://validator.w3.org/nu/#textarea-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Mans Profile</title>
-            <!--info about link to font using a cdn-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,900&family=Rubik+Bubbles&display=swap" 
-        rel="stylesheet"> 
-    <!--link to style sheets-->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="/css/stylesheet.css"></link>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
-
 <body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
 
-    <!--Burger Menu Start-->
-    <nav class="burger-menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="./documents/Alex Mans Web Dev Resume.pdf" 
-                download="Alex Web Development Resume">Web Development Resume</a></li>
-            <li><a href="./documents/Alex Mans IT Specialist Resume.pdf" 
-                download="Alex IT Specialist Resume">IT Specialist Resume</a></li>
-        </ul>
-    </nav>
-    <!-- burger menu stop-->
-
-
-    <!--The header (top) of website-->
-    <header class="header-main">
-        <div class="header-main-logo">
-            <img src="images/logo.png" alt="imagon logo">
-            <nav class="header-main-nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="./documents/Alex Mans Web Dev Resume.pdf"
-                        download="Alex Web App Development Resume">Web App Development Resume</a></li>
-                    <li><a href="./documents/Alex Mans IT Specialist Resume.pdf"
-                        download="Alex IT Specialist Resume">IT Specialist Resume</a></li>
-                </ul>
-            </nav>
-        </div>
-
-    <!-- ADD PICTURES AND STYLING FOR LINKEDIN AND GITHUB-->
-        <div class="header-main-sm">
-            <a href="https://github.com/amans392" target="_blank">
-                <div class="header-main-sm-gh"></div>
-            </a>
-
-             <a href="https://www.linkedin.com/in/alexjmans/" target="_blank">
-                <div class="header-main-sm-in"></div>
-            </a>
-            
-        <!--      
-            <a href="https://facebook.com"><div class="header-main-sm-fb"></div>
-            </a>
-            <a href="https://instagram.com"><div class="header-main-sm-in"></div>
-            </a>
-        -->
-            <div class="burger-menu-btn"></div>
-
-        </div>
+        <nav class="navbar">
+            <a href="#home" style="--1:1" class="active" >Home</a>
+            <a href="#about" style="--1:2" >About</a>
+            <a href="#services" style="--1:3"> Services</a>
+            <a href="#skills" style="--1:4" >Skills</a>
+            <a href="#portfolio" style="--1:4" >Portfolio</a>
+            <a href="#contact" style="--1:5" >Contact</a>
+       
+        </nav>
     </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Alex Mans</h1>
+            <h3>And I'm a <span class="autotype"></span></h3>
+            <p>I'm An IT professional with extensive experience working on complex IT infrastructure across multi disciplined teams
+                <br> building web development projects
+            </p>
+            <div class="home-scl">
+                <!-- use of https://boxicons.com for social media link images-->
+                <a href="https://www.linkedin.com/in/alexjmans/" style="--1:9"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/amans392" style="--1:10"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="/documents/Web Developer Resume.pdf" download="Alex Web Developer Resume" class="btn-box">Web Development Resume</a>
+            <a href="/documents/IT Professional Resume.pdf" download="Alex IT Professional Resume" class="btn-box">IT Professional Resume</a>
 
-    <main>
-        <div class="main-intro">
-            <h1> Welcome<br>to my website</h1>
-            
-        </p>
-        <br><br>
-        <!--<a href="#">MY WORK</a>-->
         </div>
-        <div class="main-quotes">
-            <p> Coding like poetry <br> should be short and concise. <br> ― Santosh Kalwar </p>
+    </section>
+
+    <section class="about">
+        <div class="about-img" id="about">
+            <img src="/images/PortfolioPicture.jpg"> </img>
         </div>
-
-    </main>
-
-        <section class="index-category">
-
-        <p>Projects</p>
-          
-                <a href="#" class="index-category-box">
-                    <div class="dark-overlay">
-                        <h3>Portfolio Website</h3>         
-                    </div>
-                    
-                </a>
-           
-                <a href="https://mtgcardsearch-app.web.app/" target="_blank" class="index-category-box">
-                    <div class="dark-overlay">
-                        <h3>Magic the Gathering Card Search App</h3>
-                    </div>
-                    
-                </a>
-
-                <a href="https://to-do-app-29d50.web.app/" target="_blank" class="index-category-box">
-                    <div class="dark-overlay">
-                        <h3>Firebase To-Do List App</h3>
-                    </div>
-                    
-                </a>
-
-                <!-- <a href="#" class="index-category-box">
-                    <div class="dark-overlay">
-                        <h3>PlaceHolder</h3>
-                    </div>
-                    
-                </a> -->
-       </section>
-
-
-    <section class="index-about">
-
-            <div class="wrapper-main index-about-flex">
-                <div class="index-about-img">
-                    <img src="images/thumbnail_A. Man.jpg" alt="Alex Mans Portrait">
-                </div>
-                <div class="index-about-text">
-                    <h2>About Me</h2>
-                    <p>Web App Developer: Alex Mans <br> 
-                        Currently building personal projects in the React framework</p>
-                        <li><a href="./documents/Alex Mans Web Dev Resume.pdf"
-                             download="Alex Web App Development Resume">Web App Development Resume</a></li>
-                        <li><a href="./documents/Alex Mans IT Specialist Resume.pdf"
-                             download="Alex IT Specialist Resume">IT Specialist Resume</a></li>
+            <div class="about-text">
+                <h2 id="about">About<span> Me</span></h2>
+                <h4>Web Developer!</h4>
+                    <p>
+                        I'm a skilled IT professional and have 8 years of experience working with teams in collaborative and fast-paced environments. 
+                        I’ve worked with the Department of Defense (DOD), the Commonwealth of Massachusetts,
+                        and Harvard Medical School in hybrid, on-site, and remote capacities.
+                        I have references that can attest to the high level of quality work I produce and client satisfaction.
                     </p>
-                </div>
-                <div class="index-about-skill">
-                <p>Windows</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-fill win"></div>
-                </div>
-                <p>Mac OS</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-fill mac"></div>
-                </div>
-                <p>Linux</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-fill lnx"></div>
-                </div>
-                <!-- <p>Javascript</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-fill jscript"></div>
-                </div>
-                <p>React</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-fill jv"></div>
-                </div>
-                <p>HTML & CSS</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-fill htmlcss"></div> -->
-               
+                    <a href="#" class="btn-box">More About Me</a>
+            </div>
+    </section>
+
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My <span>Services</span></h1>
+                <div class="services-list">
+                    <div class="service">
+                        <i class='bx bx-code' style='color:#00eeff'></i>
+                        <h2>Web Developer</h2>
+                        <p>I have hands-on experience working with React and Javascript, having completed several personal projects, each with a different set of challenges.
+                            I’ve built a full stack application, using React as the frontend and Cloud Firestore as the back end database and
+                            Created a search application that queries an API to fetch large amounts of external data.
+                            
+                        </p>
+                        <a href="#" class="read">Learn More</a>
+                    </div>
+
+                    <div class="service">
+                        <i class='bx bx-shield-quarter' style='color:#00eeff'></i>
+                        <h2>Cyber Security</h2>
+                        <p> I've built multible VM's for a cybersecurity home lab using Virtualbox.
+                            VM's for learning Ubuntu Linux and configuring Kali Linux for learning security tools for penetration testing.
+                            PfSense(Firewall/Router) for configuring of network interfaces, firewall rules and IP assignment to segregate and isolate VM’s on homelab network.
+                            Metasploitable 2 and Chronos for security tool vulnerability testing.
+                            Setup Windows Server 2019 for system administration skills and penetration testing.
+                        </p>
+                        <a href="#" class="read">Learn More</a>
+                    </div>
+
+                    <div class="service">
+                        <i class='bx bxl-apple' style='color:#00eeff' ></i>
+                        <h2>IT Specialist</h2>
+                        <p>I'm very skilled at problem solving, having had to troubleshoot many complex technical issues supporting windows, mac, android, ios and linux operating systems. 
+                            I'm also an experienced collaborator, having worked with teams and departments to deliver on a variety of mission critical projects with strict deadlines.  
+                            I have work experience with Active Directory involving file share access management, along with Identity verification and support of Duo Mobile 2fa and Okta account provisioning.
+                        </p>
+                        <a href="#" class="read">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer-main">
-<!-- 
-        <div class="wrapper-main footer-main-flex">
+    <!-- combine skills section and services section to list skills under each service
+     along with replacing the lorum ipsum of each describing your work in each section-->
+    <section>
+        <div class="container1" id="skills">
+            <h1 class="sub-title">My <span>Skills</span></h1>
+            <h1 class="heading1">Technical Skills</h1>
+                <div class="skill-bars">
+                    <div class="bar"><i class='bx bxl-html5' style='color:#c95d2e' ></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html"></div>
+                            <span></span>
+                    </div>
+                    <div class="bar"><i class='bx bxl-css3' style='color:#147bbc' ></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css"></div>
+                            <span></span>
+                    </div>
+                    <div class="bar"> <i class='bx bxl-javascript' style='color:#b0bc1e' ></i>
+                        <div class="info">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="progress-line javascript"></div>
+                            <span></span>
+                    </div>
+                    <div class="bar"><i class='bx bxl-python' style='color:#c32ec5' ></i>
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python"></div>
+                            <span></span>
+                    </div>
+                    <div class="bar">
+                        <div class="info"><i class='bx bxl-react' style='color:#69bcbc' ></i>
+                            <div>React</div>
+                        </div>
+                        <div class="progress-line react"></div>
+                            <span></span>
+                    </div>
 
-            <div class="footer-testimony">
-                <img src="images/blankface.jpg" alt="testimony">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-            </div>
+                    <!-- Add p tags with project descriptions below the project links-->
+    <section class="index-projects">
+        <div id="portfolio">
+            <h2 class="sub-title">My<span>Portfolio</span></h2>
+                <div class="project-flex-wrapper">
+                    
+                    <div class="project-container">
+                        <p class="project-title">Firebase To-Do List App</p>
+                            <a href="#" class="index-category-box">
+                                <!-- Project preview image goes here
+                                 UPDATE TO Completed website picture -->
+                                 <img class="thumbnail" src="./images/Firebase to-do app.png"> </img>
+                            </a>
+                            <p>HTML/CSS | JS</p>
+                    </div>
+                   
+                    <div class="project-container">
+                        <p class="project-title">Magic the Gathering Card Search App</p>
+                            <a href="https://mtgcardsearch-app.web.app/" target="_blank" class="index-category-box">
+                                <!-- Project preview image goes here -->
+                                <img class="thumbnail" src="./images/mtg card search app.png"></img>
+                            </a>
+                            <p>HTML/CSS | React</p>
+                    </div>
+                    
+                    <div class="project-container">
+                        <p class="project-title">Portfolio Website</p>
+                            <a href="https://to-do-app-29d50.web.app/" target="_blank" class="index-category-box">
+                                <!-- Project preview image goes here -->
+                                 <img class="thumbnail" src="./images/portfolio website.png"></img>
+                                </a>
+                                <p>React| Firebase</p>
+                </div>
 
-            <div class="footer-testimony">
-                <img src="images/blankface.jpg" alt="testimony">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-            </div>
-            <div class="footer-testimony">
-                <img src="images/blankface.jpg" alt="testimony">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-            </div>
-            <div class="footer-testimony">
-                <img src="images/blankface.jpg" alt="testimony">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-            </div>
-            <div class="footer-testimony">
-                <img src="images/blankface.jpg" alt="testimony">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-            </div>
+                <!-- <div class="portfolio-content">
 
-            <a class="footer-getintouch" href="#">GET IN TOUCH WITH ME</a> -->
+                    <div class="row">
+                        <img src="/images/Firebase to-do app.png">
+                        <div class="layer">
+                            <h5>UI/UX Design</h5>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                eu</p>
 
-            <div class="footer-sitemap">
-            <!--unordered list-->
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <!-- <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">ABOUT ME</a></li> -->
-                    <!-- <li><a href="#">CONTACT</a></li> -->
-                </ul>   
-                <ul>
-                    <!-- <li><a href="#">WEB DEVELOPMENT</a></li> -->
+                                <a href="#"> <i class='bx bx-link-external' style="color: aliceblue;" ></i></a>
+                        </div>
+                    </div>
 
-                </ul>
-                <ul>
-                    <!-- <li>
-                        <p> If you want a custom website made, then feel free 
-                        to send me an e-mail or call me to arrange a small meeting</p>
-                    </li> -->
-                </ul>
-                <!-- <ul>
-                    <li><p> GET IN TOUCH</p></li>
-                    <li><p> 123 456 7890</p></li>
-                    <li><p> john@doe.com</p></li>
-                    <li><p> 123 Fake Street, City</p></li>
-                </ul> -->
+                        <div class="row">
+                            <img src="/images/mtg card search app.png">
+                            <div class="layer">
+                                <h5>UI/UX Design</h5>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                    eu</p>
+    
+                                    <a href="#"> <i class='bx bx-link-external' style="color: aliceblue;" ></i></a>
+                            </div>
+                        </div>
+                            <div class="row">
+                                <img src="/images/portfolio website.jpg">
+                                <div class="layer">
+                                    <h5>UI/UX Design</h5>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                                        eu</p>
+        
+                                        <a href="#"> <i class='bx bx-link-external' style="color: aliceblue;" ></i></a>
+                                </div>
+                                </div> -->
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
-<!--javascript section-->
+    </section>
 
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
+
+    <!-- For Skills Sections, Add icons for operating systems https://boxicons.com/?query=html-->
 
 </body>
-
-
 </html>
