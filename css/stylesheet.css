@@ -164,7 +164,6 @@ body {
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: auto; */
     align-items: center;
     gap: 1.5rem;
 }
@@ -203,8 +202,8 @@ body {
 
 
 
-/* Services Section Styling */
-#services {
+/* skills Section Styling */
+#skills {
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
@@ -226,21 +225,23 @@ color: cyan;
   padding: 90px;
 }
 
-.services-list {
+.skills-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
-    .service {
+    .skill {
       width: 300px;
       height: 500px;
     }
+  p {
+    font-size: 14px;
+  }
 }
 
-.services-list div.service {
+.skills-list .skill {
     background: transparent;
-    padding: 40px;
+    padding: 20px;
     font-size: 13px;
-    font-weight: 13px;
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
@@ -249,23 +250,29 @@ color: cyan;
 
 }
 
-.services-list div i {
+
+.skills-list div:hover {
+  transform: translateY(-10px)
+}
+
+.skills-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.services-list div h2 {
+.skills-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.services-list div a {
+.skills-list div a {
     text-decoration: none;
     color: #000000;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
+    
 }
 
 .read {
@@ -283,7 +290,6 @@ color: cyan;
     animation-delay: 2.5s;
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan;
-
 }
 
 .read:hover {
@@ -293,15 +299,32 @@ color: cyan;
     0 0 200px cyan;
 }
 
-.services-list div:hover {
+.skills-list div:hover {
     transform: translateY(-10px)
+}
+
+.skills-list  .tech-list {
+  list-style-type: none;
+  margin-top: 10px;
+  text-align: center;
+  .tech {
+
+    color: white;
+    display: inline-block;
+    margin-top: 2px;
+    font-size: 12px;
+    padding: 3px;
+    border: 1px solid #051129;
+    border-radius: 10px;
+    background-color: #121d1e;
+  }
 }
 
 /* Skills Section Styling
 
-/combine with services section to add skills and remove skills section*/
+/combine with skills section to add skills and remove skills section*/
 
-section {
+/* section {
   padding: 40px;
 }
 
@@ -347,7 +370,7 @@ section {
 
 .main-text h2 span {
   color: cyan;
-}
+} */
 
 .portfolio-content {
   display: flex;
@@ -361,56 +384,75 @@ section {
   margin-top: 20px;
 }
 
-.project-container {
-  border: 1px solid #fff;
 
+.project-container {
+  background: transparent;
+  padding: 40px;
+  font-size: 20px;
+  border-right: 10px;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: 1px 1px 20px #012290f7,
+  1px 1px 40px #0053b6f7;
+  margin: 0 auto;
 }
 
+.project-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 26px;
+  align-items: center;
+}
 .project-container:hover {
-  transition: 0.2s ease-in-out;
-  opacity: 0.5;
+  box-shadow: 0 0 5px cyan, 
+  0 0 25px cyan,
+  0 0 50px cyan;
+  transform: translateY(-10px)
 }
 
 .thumbnail {
   height: 300px;
   width: 320px;
+  
 }
 
-  .layer h5 {
-    color: #000;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
-  }
+.description {
+  display: inline-block;
+  align-items: center;
+  margin-top: 10px;
+}
 
-  .layer p {
-    color: #000;
-    font-size: 1rem;
-    line-height: 1.8;
-  }
-
-  .layer i {
-    color: #ff004f;
-    margin-top: 20px;
-    font-size: 20px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-  }
+.description .tech {
+  display: inline-block;
+  list-style: none;
   
-  .row:hover img {
-    transform: scale(1.1);
+}
+  
+
+  .project-container .tech-list {
+    list-style-type: none;
+    text-align: center;
+    .tech {
+      color: white;
+      display: inline-block;
+      margin-top: 2px;
+      font-size: 15px;
+      padding: 3px;
+      border: 1px solid #051129;
+      border-radius: 10px;
+      background-color: #121d1e;
+    }
+
   }
 
-  .row:hover .layer {
-    height: 100%;
+  .project-container .repo {
+    color: white;
   }
 
-
+  .project-container .repo:hover {
+    color: cyan;
+    
+  }
 /* Animations for sliding effect on elements */
 
 @keyframes animate-bar {
@@ -499,11 +541,28 @@ Large devices (large desktops, 1200px and up)
     .project-container {
       margin-top: 30px;
     }
+    .skills-list {
+      flex-direction: column;
+      padding-top: 100px;
+      margin-top: 40px;
+  
+    }
 
   }
 
-  .services-list {
-    flex-direction: column;
-    margin-top: 30px;
-  }
 }
+
+@media (max-width: 600) {
+  .project-flex-wrapper {
+    flex-direction: column;
+    .project-container {
+      margin-top: 30px;
+    }
+  }
+.skills-list .skill {
+  flex-direction: column;
+  width: 250px;
+  height: 350px;
+}
+
+  }
