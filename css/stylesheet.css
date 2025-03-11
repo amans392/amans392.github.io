@@ -364,6 +364,7 @@ color: cyan;
   box-shadow: 1px 1px 20px #012290f7,
   1px 1px 40px #0053b6f7;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .project-title {
