@@ -161,11 +161,16 @@ body {
 }
 
 /* About Section Styling */
-.about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1.5rem;
+/* .about {
+    display: flex;
+    flex-direction: row;
+} */
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .about img {
@@ -175,6 +180,13 @@ body {
     max-width: 300px;
     height: auto;
     width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+.about-text {
+  height: 400px;
+  width: 800px;
 }
 
 .about-text h2 {
@@ -198,17 +210,12 @@ body {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 60px;
+    margin-left: 40px;
 }
 
 
 
 /* skills Section Styling */
-#skills {
-    color: aliceblue;
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 4rem;
-}
 
 .sub-title {
     text-align: center;
@@ -223,6 +230,10 @@ color: cyan;
 
 .container {
   padding: 90px;
+}
+
+.skills {
+  margin-bottom: 200px;
 }
 
 .skills-list {
